@@ -1,6 +1,6 @@
 export default {
   async fetch(request, env) {
-
+ 
     if (request.method === 'OPTIONS') return cors(new Response(null, { status: 204 }), env);
     const url = new URL(request.url);
     try {
